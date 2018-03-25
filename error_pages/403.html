@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" />
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="error.css" />
+  </head>
+  <body class="plain error-page-wrapper background-color background-image">
+    <div class="content-container">
+	<div class="head-line secondary-text-color">
+		403
+	</div>
+	<div class="subheader primary-text-color">
+    I'm sorry Dave, I'm afraid I can't let you do that.
+	</div>
+	<hr>
+	<div class="clearfix"></div>
+	<div class="context primary-text-color">
+		<!-- doesn't use context_content because it's ALWAYS the same thing -->
+    <p>
+      You may want to head back to the homepage.<br />
+      If you think something is broken, report a problem.
+    </p>
+	</div>
+	<div class="buttons-container">
+		<a class="border-button" id="homepage">Go To Homepage</a>
+		<a class="border-button" id="problem" target="_blank">Report A Problem</a>
+	</div>
+</div>
+  <script src="error.js"></script>
+  <script>
+    buttonize();
+    ep = new ErrorPage('body', "403", "plain");
+    ep.initialize();
+  </script>
+  </body>
+</html>

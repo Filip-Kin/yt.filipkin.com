@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" />
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="error.css" />
+  </head>
+  <body class="plain error-page-wrapper background-color background-image">
+    <div class="content-container">
+	<div class="head-line secondary-text-color">
+		Oh Hi, I see your bored.
+	</div>
+    <ul style="list-style: none;">
+      <li>
+  		<a class="border-button" href="400.html">Error 400</a>
+      </li>
+      <li>
+  		<a class="border-button" href="403.html">Error 403</a>
+      </li>
+      <li>
+  		<a class="border-button" href="404.html">Error 404</a>
+      </li>
+      <li>
+  		<a class="border-button" href="503.html">Error 503</a>
+      </li>
+      <li>
+  		<a class="border-button" href="maintenance.html">Maintenance</a>
+      </li>
+      <li>
+  		<a class="border-button" href="index.html">Under Construction</a>
+      </li>
+    </ul>
+</div>
+  <script src="error.js"></script>
+  <script>
+    ep = new ErrorPage('body', "Construction", "plain");
+    ep.initialize();
+  </script>
+  </body>
+</html>
