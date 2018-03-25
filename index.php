@@ -229,7 +229,7 @@ if ($sc > 49) {
                   var request = gapi.client.request({
                     'method': 'GET',
                     'path': '/youtube/v3/search',
-                    'params': {'part': 'snippet', 'channelId': sub, 'maxResults': '2', 'order':'date'}
+                    'params': {'part': 'snippet', 'channelId': sub, 'maxResults': multiple+1, 'order':'date'}
                   });
                   request.execute(function(response) {
                     numberOfSubsProcessed++;
@@ -269,10 +269,7 @@ if ($sc > 49) {
                           out[i] += '<br>Views: '+views;
                           out[i] += '<br>Length: '+length;
                           out[i] += '<br>Published: '+date+'</div></div>';
-                          x++;
-                          if (x == sc) {
-                            document.getElementById("subscriptions").innerHTML=out.join("<hr>")+"<hr>";
-                          }
+                          document.getElementById("subscriptions").innerHTML=out.join("<hr>")+"<hr>";
                         });
                       })
                     }
