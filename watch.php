@@ -74,7 +74,7 @@ function nicenumber($n) {
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-zero embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/<?php echo $id; ?>?autoplay=1" frameborder=0 allowfullscreen="allowfullscreen"></iframe>
+          <iframe class="embed-responsive-item" src="http://www.youtubeeducation.com/embed/<?php echo $id; ?>?autoplay=1" frameborder=0 allowfullscreen="allowfullscreen"></iframe>
         </div>
         <h1><?php echo $title; ?></h1>
         Channel: <?php echo $channel; ?>
